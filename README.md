@@ -5,6 +5,8 @@ My .vim
 ```
 $ git clone https://github.com/dimasaryo/.vim.git
 $ ln -s ~/.vim/vimrc ~/.vimrc
+$ cd .vim
+$ git submodule update --init --recursive
 ```
 
 ## Theme
