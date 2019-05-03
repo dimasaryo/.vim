@@ -36,5 +36,8 @@ let g:NERDSpaceDelims = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 set updatetime=100
-
+set backspace=indent,eol,start
 execute pathogen#infect()
+call plug#begin()
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+call plug#end()
