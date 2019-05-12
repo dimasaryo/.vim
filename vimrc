@@ -21,6 +21,7 @@ set expandtab
 set smartindent
 set autoindent
 set showmatch
+set noswapfile
 
 set hlsearch
 
@@ -37,7 +38,11 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 set updatetime=100
 set backspace=indent,eol,start
+:let g:notes_directories = ['~/Notes']
 execute pathogen#infect()
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'terryma/vim-multiple-cursors'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
