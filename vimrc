@@ -29,6 +29,7 @@ set splitright
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | split | resize 50
 let NERDTreeShowHidden=1
 
 let g:jedi#use_splits_not_buffers = "left"
@@ -45,4 +46,5 @@ Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'Shougo/deol.nvim'
 call plug#end()
