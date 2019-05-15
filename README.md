@@ -1,6 +1,11 @@
 # .vim
 My .vim
 
+![screenshot](https://i.ibb.co/J3vFbTH/Screen-Shot-2019-05-15-at-10-18-51.png)
+
+## Prerequisite
+Neovim or vim 8
+
 ## Usage
 ```
 $ git clone https://github.com/dimasaryo/.vim.git
